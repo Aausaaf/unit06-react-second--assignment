@@ -17,6 +17,8 @@ import { Product } from "./router/product";
 import { Featured } from "./router/featured";
 import { Task } from "./router/task";
 import { User } from "./router/uder";
+import State from "./state/Example";
+import Check from "./state/check";
 const App = () =>  {
   const [vary,setvary] = useState(0)
    const change = (a) => 
@@ -120,8 +122,8 @@ return(
     </div>
      </>} />
      {/* <Route path="/onclicksidebar" element={<><Navbar/> <Onclickslidebar/></>} /> */}
-     <Ravbar></Ravbar>
-   <Routes>
+     {/* <Ravbar></Ravbar> */}
+   {/* <Routes>
      <Route path=":userId" element={<User></User>}/>
    <Route  path="/" element = {<Home></Home>}/>
    <Route path="/about" element= {<About></About>}/>
@@ -131,9 +133,10 @@ return(
      <Route index element={<Featured></Featured>}/>
      <Route path="featured" element={<Featured></Featured>}/>
      <Route path="task" element={<Task></Task>}/>
-   </Route>
+   </Route> */}
 
-   </Routes>
+   {/* </Routes> */}
+   <Check></Check>
   
   </>
 )
