@@ -44,6 +44,33 @@ const Ans2 = () =>{
         setname(name-1)
     }
 }
+
+const Ans3 = () =>{
+  if(+name == 0)
+  {
+      alert(`you can not dec below zero`)
+  }
+  else
+  {
+      let n = name
+      if(n >= 10 && n <= 20)
+{
+    setcolor("c1")
+}
+else if (n <= 10)
+{
+  setcolor("c0")
+}
+else if (n >=  20)
+{
+  setcolor("c2")
+}
+  setname(name+1)
+      setname(name+2)
+  }
+}
+
+
     return (
         <>
             <div className="main_div">
@@ -57,6 +84,10 @@ const Ans2 = () =>{
                  </button>
                  <button className="decbuttom" onClick={Ans2}>
                   Dec
+                 </button>
+                 <br />
+                 <button style={{marginLeft:"-12vh"}} className="decbuttom" onClick={Ans3}>
+                  Double
                  </button>
 
              </div>
